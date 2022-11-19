@@ -1,0 +1,17 @@
+<html>
+    <title>
+        Select Preferences 
+    </title>
+<body style="background-image: url('/static/category.jpg');">
+      <center><p style="color:white;background-color:black;font-size:50px;font-family:sans-serif">Welcome User : {{username}}</p></center>
+      <br><br>
+      <p style="color:white;background-color:black;font-size:30px;font-family:sans-serif;margin: 5px;">Type Down the news categories/preferences wish to be in your news feed  </p>
+      <p style="color:white;background-color:black;font-size:20px;font-family:sans-serif;margin: 5px;">In the Format : "Politics","Science","Tech","Hindu Newspaper", ... </p><br>
+      
+      <form action = "{{ url_for('prefn') }}" method = "POST">
+      <textarea name="preferences" id="preferences" cols="100" rows="30"></textarea>
+      <input type="submit" style="margin:2px;size: 20px;"><a href="/test" style="font-size: 30px;text-decoration:none">SUBMIT</a></input>
+    </form>
+    </body>
+
+</html>
