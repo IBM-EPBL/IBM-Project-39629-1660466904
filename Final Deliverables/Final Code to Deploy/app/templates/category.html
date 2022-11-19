@@ -1,0 +1,15 @@
+<html>
+    <title>
+        Select Preferences 
+    </title>
+<body style="background-image: url('/static/category.jpg');">
+      <center><p style="color:white;background-color:black;font-size:50px;font-family:sans-serif">Welcome User : Kalaiselvan</p></center>
+      <br><br>
+      <p style="color:white;background-color:black;font-size:30px;font-family:sans-serif;margin: 5px;">Type Down the news categories/preferences wish to be in your news feed  </p>
+      <p style="color:white;background-color:black;font-size:20px;font-family:sans-serif;margin: 5px;">In the Format : "Politics","Science","Tech","Hindu Newspaper", ... </p><br>
+      
+      <textarea name="preferences" id="preferences" cols="100" rows="30"></textarea>
+      <button style="margin:2px;size: 20px;"><a href="{{ url_for('newsfeed') }}" style="font-size: 30px;text-decoration:none">SUBMIT</a></button>
+</body>
+
+</html>
